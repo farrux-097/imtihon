@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>sign in</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body style="background: linear-gradient(to left, #f7b733, #fc4a1a);" class="flex items-center justify-center w-screen h-screen">
+    
+    <form  class=" login-form w-[475px] h-[550px] bg-white rounded-[20px] p-[40px] flex flex-wrap justify-center ">
+       <div class="text-center mb-[50px]">
+        <div class="flex items-center gap-[12px] mb-[40px]  ">
+            <span class="w-[4px] h-[39px] bg-[#f7b733]">
+            </span>
+            <h1 class="leading-[39px] font-bold text-[#000000] text-[32px]">
+                Admin Students 
+            </h1>
+        </div>
+        <strong class="font-bold text-[22px] text-[#000000] mb-[9px]">
+            Sign In
+        </strong>
+        <p class="font-regular text-[14px] leading-[18px] text-[#6C6C6C]">
+            Enter your credentials to access your account  
+        </p>
+       </div>
+        <label class="flex flex-col gap-[10px] w-[415px]">
+            <p  class="text-[#CDCDCD] text-[20px] font-medium "> Login</p>
+            <input type="text" placeholder="Enter your login" required autocomplete="off" class=" border-[2px] border-[#E5E5E5] pt-[15px] pb-[15px] pl-[15px] rounded-[4px] mb-[19px]" name="login">
+        </label>
+        <label class="flex flex-col gap-[10px] w-[415px] mb-[20px]">
+            <p  class="text-[#CDCDCD] font-medium text-[20px] "> Password</p>
+            <input type="password" placeholder="Enter your  Password" name="password" required class=" border-[2px] border-[#E5E5E5] pt-[15px] pb-[15px] pl-[15px] rounded-[4px]">
+        </label>
+
+        <button type="submit" class="w-[415px] h-[44px] bg-[#FEAF00] mb-[3px] rounded-[4px]">
+            SIGN IN
+        </button>
+        <a href="./signup.html" class="text-slate-400 font-bold">SIGN UP</a>
+    </form>
+
+    <script src="./js/login.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
