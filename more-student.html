@@ -29,8 +29,7 @@
                     <div class="w-[100px] h-[100px] rounded-[50%] bg-slate-400 p-4 mx-auto mb-[20px]" >
                         <img src="./images/user.svg" alt="user" width="65" height="65" class="mx-auto  mt-[5px]">
                     </div>
-                    <input class="hidden change-avatar" type="file" >
-                    <img src="" alt="" class="upload-img" width="65" height="65">
+                    <input class="hidden" type="file" >
                 </label>
                 <p class="leading-[22px] font-semibold text-[#000000] text-[25px]">
                     User
@@ -38,12 +37,12 @@
                 <strong class="font-medium text-[#FEAF00] ">
                     Admin
                 </strong>
-                <a href="./more-student.html" class="flex items-center pl-[40px] gap-[15px] mx-auto mt-[63px] w-[193px] h-[41px] bg-[#FEAF00] rounded-[4px]">
+                <button class="flex items-center pl-[40px] gap-[15px] mx-auto mt-[63px] w-[193px] h-[41px] bg-[#FEAF00] rounded-[4px] ">
                     <img class="ml-40px" src="./images/hat.svg" alt="students-hat" width="20" height="12">
                     <p>
                         Students
                     </p>
-                </a>
+                </button>
                 <div class="flex justify-center mt-[200px] gap-[23px]">
                     <p>
                         LOGOUT
@@ -63,27 +62,43 @@
                     <img src="./images/bell.svg" alt="bell" width="17" height="20" class="mr-[51px]">
                 </div>
             </div>
-            <div class="flex items-center justify-between p-5">
-                <h2 class="font-bold text-[27px]">
-                    Students List
+            <div class=" p-5">
+                <h2 class="font-bold text-[27px] mb-[20px]">
+                    User
                 </h2>
-                <div class="flex items-center gap-[12px] bg-[F8F8F8]">
-                    <img src="./images/sort.svg" alt="sort" width="14" height="22">
-                    <a href="./createstudent.html"  class="p-5 rounded-[4px] bg-[#FEAF00] font-medium text-[15px] text-[#FFFFFF] mr-[10px]">
-                        ADD NEW STUDENT
-                    </a>
+                <div class="w-[98%] h-[2px] bg-[#E5E5E5]"></div>
+
+                <div class="flex  justify-between w-[760px] h-[391px] bg-white">
+                    <div class="flex items-center">
+                        <img src="./images/user.svg" alt="user" width="209" height="216">
+                        <div>
+                            <label >
+                                <p class="text-[#CDCDCD] font-medium text-[20px]">Name</p>
+                                <input type="text" required placeholder="Enter your Name" class=" border-[2px] border-[#E5E5E5] pt-[10px] pb-[10px] pl-[10px] rounded-[10px]">
+                            </label>
+                            <label >
+                                <p class="text-[#CDCDCD] font-medium text-[20px]">Email</p>
+                                <input type="email" required placeholder="Example@gmail.com" class=" border-[2px] border-[#E5E5E5] pt-[10px] pb-[10px] pl-[10px] rounded-[10px]">
+                            </label>
+                            <label >
+                                <p class="text-[#CDCDCD] font-medium text-[20px]">Phone</p>
+                                <input type="tel" required placeholder="+998" class=" border-[2px] border-[#E5E5E5] pt-[10px] pb-[10px] pl-[10px] rounded-[10px]">
+                            </label>
+                            <label >
+                                <p class="text-[#CDCDCD] font-medium text-[20px]">Date admission</p>
+                                <input type="date" required  class=" border-[2px] border-[#E5E5E5] pt-[10px] pb-[10px] pl-[10px] rounded-[10px]">
+                            </label>
+                        </div>
+                    </div>
+                    <img src="./images/pencil.svg" alt="pencil" width="15" height="83" class="mb-[50px]"> 
                 </div>
             </div>
-            <div class="w-[98%] h-[2px] bg-[#E5E5E5]"></div>
-            <div>
-                <img src="./images/kuala.png" alt="kuala" width="340" height="255" class="mx-auto">
-            </div>
+            
         </div>
     </div>
 
 
 
-    <script src="./js/student.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
